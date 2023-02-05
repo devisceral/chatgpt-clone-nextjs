@@ -6,7 +6,8 @@
   --bg-color: #343540;
 }
 
-html, body {
+body,
+html {
   height: 100%;
 }
 
