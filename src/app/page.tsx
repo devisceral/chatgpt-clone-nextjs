@@ -222,8 +222,8 @@ export default function Home() {
   };
 
   return (
-    <main className='relative h-full w-full transition-width flex flex-col overflow-hidden items-stretch flex-1'>
-      <div className='flex-1 overflow-hidden' >
+    <main className='relative h-full w-full transition-width flex flex-col overflow-auto items-stretch flex-1'>
+      <div className='flex-1' >
         <div className='h-full dark:bg-gray-800'>
           <div className='flex flex-col items-center text-sm h-full dark:bg-gray-800'>
             {responseMessage === '' ? (
@@ -243,7 +243,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-0 left-0 w-full border-t md:border-t-0 dark:border-white/20 md:border-transparent md:dark:border-transparent md:bg-vert-light-gradient bg-white dark:bg-gray-800 md:!bg-transparent dark:md:bg-vert-dark-gradient'>
+      <div className='bottom-0 left-0 w-full border-t md:border-t-0 dark:border-white/20 md:border-transparent md:dark:border-transparent md:bg-vert-light-gradient bg-white dark:bg-gray-800 md:!bg-transparent dark:md:bg-vert-dark-gradient'>
         {loading ? (
           ''
         ) : (
